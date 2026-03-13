@@ -30,7 +30,7 @@ jobs:
 
       - uses: r-lib/actions/setup-tinytex@v2
 
-      - run: Rscript -e 'tinytex::tlmgr_install(c("subfig", "wrapfig"))'
+      - run: Rscript -e 'tinytex::tlmgr_install(c("subfig", "wrapfig", "caption"))'
 
       - uses: r-lib/actions/check-r-package@v2
         with:
