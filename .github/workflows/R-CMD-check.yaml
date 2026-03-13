@@ -29,8 +29,8 @@ jobs:
           needs: check
 
       - uses: r-lib/actions/setup-tinytex@v2
-        with:
-          install-latex: true
+
+      - run: tlmgr install subfig wrapfig
 
       - uses: r-lib/actions/check-r-package@v2
         with:
