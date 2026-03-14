@@ -35,7 +35,7 @@ jobs:
 
       - name: Install LaTeX dependencies
         run: |
-          tinytex::tlmgr_install(c("subfig", "wrapfig", "caption", "bbm", "bbm-macros", "amsfonts", "doublestroke", "wasysym", "wasy", "ms", "yfonts"))
+          tinytex::tlmgr_install(c("subfig", "wrapfig", "caption", "bbm", "bbm-macros", "amsfonts", "doublestroke", "wasysym", "wasy", "ms", "yfonts", "grfext"))
         shell: Rscript {0}
       - uses: r-lib/actions/check-r-package@v2
         with:
