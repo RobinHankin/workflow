@@ -1,6 +1,9 @@
 # Workflow derived from https://github.com/r-lib/actions/tree/v2/examples
 # for debugging help, https://github.com/r-lib/actions#where-to-find-help
 
+# used by: stokes (canonical), freealg, permutations, frab, disordR, evitaicossa, clifford, 
+
+
 name: R-CMD-check
 
 on:
@@ -25,7 +28,9 @@ jobs:
 
       - uses: r-lib/actions/setup-r-dependencies@v2
         with:
-          extra-packages: any::rcmdcheck
+          extra-packages: |
+	    any::rcmdcheck
+            any::tinytex
           needs: check
 
       - uses: r-lib/actions/setup-tinytex@v2
