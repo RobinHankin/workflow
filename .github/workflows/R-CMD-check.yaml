@@ -1,7 +1,7 @@
 # Workflow derived from https://github.com/r-lib/actions/tree/v2/examples
 # for debugging help, https://github.com/r-lib/actions#where-to-find-help
 
-# used by: stokes (canonical), freealg, permutations, frab, disordR, evitaicossa, clifford, 
+# used by: stokes (canonical), freealg, permutations, frab, disordR, evitaicossa, clifford, spray, cmvnorm, jordan, magic, mvp, onion, weyl
 
 
 name: R-CMD-check
@@ -35,9 +35,8 @@ jobs:
 
       - name: Install LaTeX dependencies
         run: |
-          tinytex::tlmgr_install(c("subfig", "wrapfig", "caption", "bbm", "bbm-macros", "amsfonts", "doublestroke", "wasysym", "wasy", "ms"))
+          tinytex::tlmgr_install(c("subfig", "wrapfig", "caption", "bbm", "bbm-macros", "amsfonts", "doublestroke", "wasysym", "wasy", "ms", "yfonts"))
         shell: Rscript {0}
-
       - uses: r-lib/actions/check-r-package@v2
         with:
           upload-snapshots: true
