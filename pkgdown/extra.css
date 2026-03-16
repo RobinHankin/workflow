@@ -1,0 +1,26 @@
+/* 1. Target MathJax containers specifically (Chrome/Safari) */
+/* This leaves Firefox's native MathML spacing largely untouched */
+mjx-container[display="true"], 
+.katex-display {
+  margin-top: 0.5em !important;
+  margin-bottom: 0.5em !important;
+  padding: 0 !important;
+}
+
+/* 2. Fix the 'Paragraph Gap' across all browsers */
+/* This handles the vertical space between the text and the math */
+p:has(.math), 
+.math.display {
+  margin-bottom: 0.2em !important;
+}
+
+/* 3. Global Readability (Safe for all browsers) */
+.container {
+  max-width: 960px !important;
+}
+
+body {
+  line-height: 1.5;
+  /* subtle font smoothing for non-Firefox browsers */
+  -webkit-font-smoothing: antialiased;
+}
