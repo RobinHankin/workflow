@@ -15,7 +15,7 @@ RUN Rscript -e "tinytex::tlmgr_install(c('subfig', 'wrapfig', 'wrapfig2', 'capti
     'bbm', 'bbm-macros', 'amsfonts', 'doublestroke', 'wasysym', 'wasy', \
     'ms', 'yfonts', 'grfext', 'tikz-cd', 'environ', 'etoolbox', 'pgf', 'xcolor'))"
 
-# Pre-install R-CMD-check requirements to save time
+# Pre-install R-CMD-check requirements (to save time)
 RUN Rscript -e "install.packages(c('rcmdcheck', 'remotes', 'sessioninfo'))"
 
 WORKDIR /workspace
