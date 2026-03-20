@@ -1,7 +1,7 @@
 Powered by `math-r-base` Docker.  Check time: **~3m**
 
-| Package | Status | CRAN |
-| :--- | :--- | :--- |
+| | | | | |
+| :---: | :---: | :---: | :---: | :---: |
 | **Brobdingnag** | [![Check](https://github.com/robinhankin/Brobdingnag/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/robinhankin/Brobdingnag/actions/workflows/R-CMD-check.yaml) | [📦](https://cran.r-project.org/package=Brobdingnag) |
 | **clifford** | [![Check](https://github.com/robinhankin/clifford/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/robinhankin/clifford/actions/workflows/R-CMD-check.yaml) | [📦](https://cran.r-project.org/package=clifford) |
 | **cmvnorm** | [![Check](https://github.com/robinhankin/cmvnorm/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/robinhankin/cmvnorm/actions/workflows/R-CMD-check.yaml) | [📦](https://cran.r-project.org/package=cmvnorm) |
