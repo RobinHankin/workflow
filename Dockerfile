@@ -15,7 +15,8 @@ ENV PATH="${PATH}:/root/.TinyTeX/bin/x86_64-linux"
 RUN /root/.TinyTeX/bin/x86_64-linux/tlmgr install \
     subfig wrapfig wrapfig2 caption bbm bbm-macros \
     amsfonts doublestroke wasysym wasy yfonts grfext \
-    tikz-cd environ etoolbox pgf xcolor dsfont
+    tikz-cd environ etoolbox pgf xcolor dsfont \
+    && tlmgr path add
 
 RUN Rscript -e "install.packages(c('rcmdcheck', 'remotes', 'sessioninfo'))"
 
