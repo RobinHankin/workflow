@@ -8,8 +8,7 @@ RUN apt-get update && apt-get install -y \
 
 RUN Rscript -e "install.packages('tinytex'); \
     tinytex::install_tinytex(); \
-    tinytex::tlmgr_path('add'); \
-    tinytex::use_tinytex()"
+    tinytex::tlmgr_path('add')"
 
 ENV PATH="${PATH}:/root/.TinyTeX/bin/x86_64-linux"
 
