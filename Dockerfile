@@ -14,7 +14,7 @@ ENV PATH="${PATH}:/root/.TinyTeX/bin/x86_64-linux"
 
 
 RUN /root/.TinyTeX/bin/x86_64-linux/tlmgr install \
-    subfig wrapfig wrapfig2 caption bbm bbm-macros \
+    subfig wrapfig wrapfig2 caption bbm bbm-macros bbm-type1\
     amsfonts doublestroke wasysym wasy wasy-type1 yfonts grfext \
     tikz-cd environ etoolbox pgf xcolor xypic \
     ae a4wide fancyvrb natbib \
