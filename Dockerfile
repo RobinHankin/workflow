@@ -4,7 +4,7 @@ RUN apt-get update && apt-get install -y \
     libcurl4-openssl-dev libssl-dev libxml2-dev \
     ghostscript pandoc wget curl perl xz-utils make \
     qpdf gh jq texinfo \
-    && rm -rf /var/lib/apt/lists/*
+    && sudo rm -rf /var/lib/apt/lists/*
 
 RUN Rscript -e "install.packages('tinytex'); \
     tinytex::install_tinytex(); \
