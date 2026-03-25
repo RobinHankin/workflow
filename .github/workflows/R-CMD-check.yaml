@@ -8,6 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: ghcr.io/robinhankin/math-r-base:latest
+      options: --pull always
 
     env:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
